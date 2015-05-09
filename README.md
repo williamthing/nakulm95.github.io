@@ -15,7 +15,15 @@ William Thing, Nakul Malhotra, Eeshan Londhe, Kritin Vij
 
 5. Developing a sustainable retirement system
 
-6. 
+6. Seattle Preschool Program
+
+7. Paid Sick Leave
+
+8. Plastic Bag Ban
+
+9. Comprehensive Commercial Recycling in Seattle
+
+10. Affordable Workforce Housing
 
 http://www.seattle.gov/council/issues.htm
 
