@@ -1,11 +1,16 @@
 (function() {
     $(document).ready(function() {
         contentLoad();
+        
     });
 
    function contentLoad() {
         loadContent(function(pages) {
-            console.log(pages);
+          console.log(pages);
+          for(int i = 0; i < pages.length; i++) {
+            $("#yes" + i).innerHTML = parseInt($("#yes" + i).innerHTML) + 1;
+            $("#no" + i).innerHTML = parseInt($("#no" + i).innerHTML) + 1;
+          }
         });
     }
 
