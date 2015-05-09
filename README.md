@@ -1,4 +1,4 @@
-# Polites Forum Page
+# Polites Forum Page @ PFP.com
 Polites is a web application that provides a community for people in Seattle to discuss on current issues in the Seattle City Council.
 
 Group
@@ -15,7 +15,15 @@ William Thing, Nakul Malhotra, Eeshan Londhe, Kritin Vij
 
 5. Developing a sustainable retirement system
 
-6. 
+6. Seattle Preschool Program
+
+7. Paid Sick Leave
+
+8. Plastic Bag Ban
+
+9. Comprehensive Commercial Recycling in Seattle
+
+10. Affordable Workforce Housing
 
 http://www.seattle.gov/council/issues.htm
 
