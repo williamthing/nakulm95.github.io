@@ -24,8 +24,6 @@ var serve = serveStatic('.', {});
 var port = process.env.PORT || 8081;
 
 function dbQuery(query_string, callback) {
-  connection.connect();
-  
   connection.connect(query_string, function(err, rows, fields) {
     if (err) throw err;
     
