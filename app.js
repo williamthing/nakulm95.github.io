@@ -6,12 +6,13 @@ var facebook = require('facebook-sdk');
 var serveStatic = require('serve-static');
 var finalhandler = require('finalhandler');
 
+/*
 var connection = mysql.createConnection({
-  host : 'https://onehackawaydb.cnbjx1hwuchp.us-west-2.rds.amazonaws.com:3306',
+  host : 'mysql//onehackawaydb.cnbjx1hwuchp.us-west-2.rds.amazonaws.com:3306',
   db   : 'ohadb',
   user : 'one_hack_Master',
   password : 'One_HACK_master!69'
-});
+});*/
 
 var FB = new facebook.Facebook({
   appId     :   '465186800311796',
@@ -19,6 +20,9 @@ var FB = new facebook.Facebook({
   version   :   'v2.3',
   secret    :   'f765517b760a787f24d9d2c569ff020a'
 });
+
+var urldb = 'mysql://one_hack_Master:One_HACK_master!69@onehackawaydb.cnbjx1hwuchp.us-west-2.rds.amazonaws.com:3306/ohadb';
+var connection = mysql.createConnection(urldb);
 
 var serve = serveStatic('.', {});
 var port = process.env.PORT || 8081;
