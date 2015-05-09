@@ -1,3 +1,5 @@
+Polites is a web application that provides a community for people in Seattle to discuss on current issues in the Seattle City Council.
+
 # Polities Forum Page!!
 
 # FACEBOOK HACKATHON 2015
