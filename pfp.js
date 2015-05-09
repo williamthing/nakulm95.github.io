@@ -4,14 +4,11 @@
     });
 
     function contentLoad() {
-      /*
-        loadContent(function(pages) {
-            console.log(pages);
-        });*/
       console.log("gg");
+      dbQuery('select * from forum', loadContent);
     }
 
-    function loadContent(callback) {
-      
+    function loadContent() {
+      console.log("g1");
     }
 })();
