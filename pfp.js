@@ -11,8 +11,7 @@
 
     function loadContent(callback) {
         var request = $.ajax({
-            url: '/?test=',
-            data: {query: 'SELECT * FROM forum' },
+            data: {query: 'SELECT * FROM topics' },
             type: 'GET'
         });
 
