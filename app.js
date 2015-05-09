@@ -31,7 +31,7 @@ function dbQuery(query_string, callback) {
   connection.query(query_string, function(err, rows, fields) {
     if (err) throw err;
     
-    console.log('the solution is: ' + rows[0].solution);
+    //console.log('the solution is: ' + rows[0].solution);
     callback(rows);
   });
 }
