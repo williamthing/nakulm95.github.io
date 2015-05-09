@@ -88,3 +88,9 @@ a:hover {
 a:active {
     color: green;   
 }
+
+#counter {
+    top: 0px;
+    right: 0px;
+    position: fixed;
+}
