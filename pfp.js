@@ -7,9 +7,10 @@
    function contentLoad() {
         loadContent(function(pages) {
           console.log(pages);
-          for(int i = 0; i < pages.length; i++) {
-            $("#yes" + i).innerHTML = parseInt($("#yes" + i).innerHTML) + 1;
-            $("#no" + i).innerHTML = parseInt($("#no" + i).innerHTML) + 1;
+          for(var i = 0; i < pages.length; i++) {
+            console.log(pages[i].yes);
+            $("#yes" + i).innerHTML = pages[i].yes;
+            $("#no" + i).innerHTML = pages[i].no;
           }
         });
     }
