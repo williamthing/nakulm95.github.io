@@ -3,7 +3,7 @@ Polites is a web application that provides a community for people in Seattle to 
 
 Group
 ============
-- William Thing, Nakul Malhotra, Eeshan Londhe, Kritin Vij
+William Thing, Nakul Malhotra, Eeshan Londhe, Kritin Vij
 
 1. University District Business Improvement Area
 
