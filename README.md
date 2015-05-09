@@ -18,3 +18,5 @@ William Thing, Nakul, Eeshan Londhe, Kritin
 
 6. 
 
+http://www.seattle.gov/council/issues.htm
+http://www.sos.wa.gov/elections/initiatives/Initiatives-With-Signatures.aspx
