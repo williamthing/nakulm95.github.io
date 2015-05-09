@@ -40,3 +40,12 @@
 	position:relative;
 	top:1px;
 }
+
+#wholepage {
+	width: 70%;	
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	z-index: 5;
+}
+}
