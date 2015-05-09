@@ -24,13 +24,13 @@ var serve = serveStatic('.', {});
 var port = process.env.PORT || 8081;
 
 function dbQuery(query_string, callback) {
-  connection.connect(function(err) {
-    if (err) {
-      console.log("error connecting: " + err.stack);
-      return;
-    }
+  connection.connect();
+  
+  connection.connect(query_string, function(err, rows, fields) {
+    if (err) throw err;
     
-    console.log("connected as id " + connection.threadId);
+    console.log('the solution is: ' + rows[0].solution);
+    callback(rows);
   });
 }
 
@@ -48,8 +48,17 @@ function dbInsert(insert_params, table, callback) {
 
 var server = http.createServer(function(req, res) {
   var _get = queryString.parse(url.parse(req.url).query);
-  var done = finalhandler(req, res);
-  serve(req, res, done);
+  
+ if (_get.hasOwnProperty('test')) {
+    console.log(req.url);
+    /*dbQuery(, function(result) {
+      res.writeHead(200, {'Content-Type': 'application/json'});
+      res.end(JSON.stringify(result));*/
+    });
+  } else {
+    var done = finalhandler(req, res);
+    serve(req, res, done);
+  }
 });
 
 server.listen(port);

@@ -3,12 +3,29 @@
         contentLoad();
     });
 
-    function contentLoad() {
-      console.log("gg");
-      dbQuery('SELECT * FROM forum', loadContent);
+   function contentLoad() {
+        loadContent(function(pages) {
+            console.log(pages);
+        });
     }
 
-    function loadContent() {
-      console.log("g1");
+    function loadContent(callback) {
+        var request = $.ajax({
+            url: '/?test=',
+            data: 'SELECT * FROM forum',
+            type: 'GET'
+        });
+
+        request.done(function(res, error) {
+            if(!res || res === null || res.status === 'failure') {
+                callback({error: 'bad request'});
+            } else {
+                callback(res);
+            }
+        });
+
+        request.fail(function(data, error) {
+            callback({error: 'db down'});
+        });
     }
 })();
