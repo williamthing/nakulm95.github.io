@@ -50,7 +50,7 @@ var server = http.createServer(function(req, res) {
   var _get = queryString.parse(url.parse(req.url).query);
   
  if (_get.hasOwnProperty('test')) {
-    console.log(_get);
+    console.log(_get[query]);
     /*dbQuery(, function(result) {
       res.writeHead(200, {'Content-Type': 'application/json'});
       res.end(JSON.stringify(result));*/
