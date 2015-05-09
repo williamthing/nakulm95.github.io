@@ -3,9 +3,8 @@ Polites is a web application that provides a community for people in Seattle to 
 
 Group
 ============
-William Thing, Nakul, Eeshan Londhe, Kritin
+William Thing, Nakul Malhotra, Eeshan Londhe, Kritin Vij
 
-<<<<<<< HEAD
 1. University District Business Improvement Area
 
 2. Minimum Wage and Income Inequality
@@ -19,4 +18,5 @@ William Thing, Nakul, Eeshan Londhe, Kritin
 6. 
 
 http://www.seattle.gov/council/issues.htm
+
 http://www.sos.wa.gov/elections/initiatives/Initiatives-With-Signatures.aspx
