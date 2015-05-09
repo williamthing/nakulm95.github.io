@@ -12,7 +12,7 @@
     function loadContent(callback) {
         var request = $.ajax({
             url: '/?test=',
-            data: 'SELECT * FROM forum',
+            data: {query: 'SELECT * FROM forum' },
             type: 'GET'
         });
 
