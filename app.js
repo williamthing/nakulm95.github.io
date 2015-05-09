@@ -4,6 +4,7 @@ var queryString = require('querystring');
 var mysql = require('mysql');
 var facebook = require('facebook-sdk');
 var serveStatic = require('serve-static');
+var finalhandler = require('finalhandler');
 
 var FB = new facebook.Facebook({
   appId     :   '465186800311796',
