@@ -2,17 +2,11 @@ a {
     color: white;   
 }
 
-body:after
-{
-    content: url("main-background1.jpg");
-    display: none;
-}
-
 body {
     background: white;
     color: white;
     font-weight: bold;
-    background-image: url("main-background1.jpg");
+    background-image: url("main-background1_mini.jpg");
     background-attachment: scroll;
     background-position: center center;
     background-repeat: none;
