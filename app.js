@@ -7,7 +7,7 @@ var serveStatic = require('serve-static');
 var finalhandler = require('finalhandler');
 
 var connection = mysql.createConnection({
-  host : 'onehackawaydb.cnbjx1hwuchp.us-west-2.rds.amazonaws.com:3306',
+  host : 'http://onehackawaydb.cnbjx1hwuchp.us-west-2.rds.amazonaws.com:3306',
   db   : 'ohadb',
   user : 'one_hack_Master',
   password : 'One_HACK_master!69'
