@@ -5,7 +5,7 @@
 
     function contentLoad() {
       console.log("gg");
-      dbQuery('select * from forum', loadContent);
+      dbQuery('SELECT * FROM forum', loadContent);
     }
 
     function loadContent() {
