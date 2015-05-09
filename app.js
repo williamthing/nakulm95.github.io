@@ -6,12 +6,8 @@ var facebook = require('facebook-sdk');
 var serveStatic = require('serve-static');
 var finalhandler = require('finalhandler');
 
-var connection = mysql.createConnection({
-  host : 'http://onehackawaydb.cnbjx1hwuchp.us-west-2.rds.amazonaws.com:3306',
-  db   : 'ohadb',
-  user : 'one_hack_Master',
-  password : 'One_HACK_master!69'
-});
+var dburl = 'mysql://one_hack_Master:One_HACK_master!69@conehackawaydb.cnbjx1hwuchp.us-west-2.rds.amazonaws.com:3306/ohadb';
+var connection = mysql.createConnection(dburl);
 
 var FB = new facebook.Facebook({
   appId     :   '465186800311796',
@@ -24,7 +20,7 @@ var serve = serveStatic('.', {});
 var port = process.env.PORT || 8081;
 
 function dbQuery(query_string, callback) {
-  connection.connect(query_string, function(err, rows, fields) {
+  connection.query(query_string, function(err, rows, fields) {
     if (err) throw err;
     
     console.log('the solution is: ' + rows[0].solution);
