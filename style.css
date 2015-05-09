@@ -1,6 +1,13 @@
 a {
     color: white;   
 }
+
+body:after
+{
+    content: url("main-background1.jpg");
+    display: none;
+}
+
 body {
     background: white;
     color: white;
