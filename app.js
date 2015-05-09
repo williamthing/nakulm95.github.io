@@ -54,7 +54,7 @@ var server = http.createServer(function(req, res) {
     /*dbQuery(, function(result) {
       res.writeHead(200, {'Content-Type': 'application/json'});
       res.end(JSON.stringify(result));*/
-    });
+    //});
   } else {
     var done = finalhandler(req, res);
     serve(req, res, done);
